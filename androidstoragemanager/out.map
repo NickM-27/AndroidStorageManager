@@ -1,0 +1,5 @@
+# compiler: R8
+# compiler_version: 1.5.51
+# pg_map_id: 75f14f0
+com.nick.mowen.androidstoragemanager.BuildConfig -> com.nick.mowen.androidstoragemanager.BuildConfig:
+    1:1:void <init>():6:6 -> <init>
