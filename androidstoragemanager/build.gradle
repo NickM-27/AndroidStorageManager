@@ -3,25 +3,24 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 29
-
-
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
     }
-
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
 }
 
 dependencies {
@@ -47,8 +46,8 @@ ext {
     artifact = 'androidstoragemanager'
     libraryVersion = '1.0'
     libraryDescription = 'A convenient view that shows a clickable preview of a link'
-    siteUrl = 'https://github.com/NickM-27/LinkPreview'
-    gitUrl = 'https://github.com/NickM-27/LinkPreview.git'
+    siteUrl = 'https://github.com/NickM-27/AndroidStorageManager'
+    gitUrl = 'https://github.com/NickM-27/AndroidStorageManager.git'
     developerId = 'nick.mowen'
     developerName = 'Nick Mowen'
     developerEmail = 'nick@nicknackdevelopment.com'
